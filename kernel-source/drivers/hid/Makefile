@@ -20,6 +20,7 @@ hid-logitech-$(CONFIG_LOGIWHEELS_FF)	+= hid-lg4ff.o
 hid-wiimote-y		:= hid-wiimote-core.o hid-wiimote-modules.o
 hid-wiimote-$(CONFIG_DEBUG_FS)	+= hid-wiimote-debug.o
 
+obj-$(CONFIG_HID_ILITEK_TOUCH)        += ilitek_lumv3_8_2.o
 obj-$(CONFIG_HID_A4TECH)	+= hid-a4tech.o
 obj-$(CONFIG_HID_ACRUX)		+= hid-axff.o
 obj-$(CONFIG_HID_APPLE)		+= hid-apple.o
